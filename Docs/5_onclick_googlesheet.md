@@ -1,8 +1,17 @@
-- Create Workflow: Start by setting up a new workflow in n8n.
-- Trigger: "On Form Submission": Set up a trigger node to capture the form submission event. This will start the workflow whenever a form is submitted.
-- Action: "Append Row in Sheet": After the form is submitted, the next action is to append the data from the form submission into a Google Sheet.
-- In this step, you’ll configure the node to connect to Google Sheets and specify the sheet where the data will be appended.
-- Execute Workflow: Once everything is connected, you can execute the workflow to test and run the process whenever a form is submitted.
-- The data from the form will automatically be added to the sheet.
+- Create Workflow: Start a new workflow in n8n.
+
+- On Form Submission Trigger: The workflow begins when a form is submitted. This triggers the "On form submission" event.
+
+- Append Row in Google Sheet: After the form is submitted, the data is added to a Google Sheet by using the "Append row in sheet" node.
+  
+-   This stores the form data in your specified Google Sheet.
+
+- Google Sheets Trigger: After the row is added to the sheet, a "Google Sheets Trigger" node is used to listen for any new rows added to the sheet.
+
+-   This acts as a trigger whenever a new form submission (row) is added.
+
+- Send Message (via Gmail): Once a new row is detected by the Google Sheets trigger, the "Send message" node sends a message (likely an email) using Gmail or another communication method.
+
+- Execute Workflow: Finally, the workflow can be executed automatically when a form is submitted, triggering all the steps in sequence.
   # screen shot
-  <img width="809" height="211" alt="image" src="https://github.com/user-attachments/assets/f6a031fc-455b-491a-b639-00a9ecc5eb49" />
+  <img width="729" height="485" alt="image" src="https://github.com/user-attachments/assets/b5c0af91-7222-4573-ad26-5f20c1ff8bef" />

@@ -6,4 +6,4 @@
 - Get API Key
 - Send Messages
   # screenshot
-  <img width="1510" height="814" alt="image" src="https://github.com/user-attachments/assets/44078dd4-d41f-415c-9849-d7864d8de187" />
+  <img width="1703" height="793" alt="image" src="https://github.com/user-attachments/assets/41ee72c2-c4ef-498e-92e0-d4c2e13e23a1" />
